@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-
+import { Link } from 'react-router-dom'
 
 const SubmitButton = () =>
   <Button
@@ -8,6 +8,8 @@ const SubmitButton = () =>
     fullWidth
     variant="contained"
     color="primary"
+    component={Link}
+    to="/form"
   >
     Submit Form
   </Button>
