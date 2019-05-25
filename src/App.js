@@ -5,6 +5,8 @@ import Box from '@material-ui/core/Box'
 import ProTip from './ProTip'
 import Link from '@material-ui/core/Link'
 
+import SubmitButton from './SubmitButton'
+
 const MadeWithLove = () =>
   <Typography variant="body2" color="textSecondary" align="center">
     {'Built with love by the '}
@@ -22,6 +24,7 @@ export const App = () =>
         Create React App v4-beta example
       </Typography>
       <ProTip/>
+      <SubmitButton/>
       <MadeWithLove/>
     </Box>
   </Container>
