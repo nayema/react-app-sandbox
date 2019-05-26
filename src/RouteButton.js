@@ -2,16 +2,16 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
 
-const SubmitButton = () =>
+const RouteButton = ({ to, buttonName }) =>
   <Button
     type="submit"
     fullWidth
     variant="contained"
     color="primary"
     component={Link}
-    to="/form"
+    to={to}
   >
-    Submit Form
+    {buttonName}
   </Button>
 
-export default SubmitButton
+export default RouteButton

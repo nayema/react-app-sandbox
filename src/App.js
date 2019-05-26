@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import ProTip from './ProTip'
 
-import SubmitButton from './SubmitButton'
+import RouteButton from './RouteButton'
 
 export const App = () =>
   <Container maxWidth="sm">
@@ -13,6 +13,9 @@ export const App = () =>
         Create React App v4-beta example
       </Typography>
       <ProTip/>
-      <SubmitButton/>
+      <RouteButton
+        to="/form"
+        buttonName="Submit Form"
+      />
     </Box>
   </Container>
